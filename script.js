@@ -122,6 +122,7 @@ nBtn.addEventListener("click", ()=>{
     btn.classList.remove("orange")
     btn.classList.remove("blue")
     turn0 = true;
+    Win = false;
 
     xWin.textContent = `0`
     oLoss.textContent = `0`
@@ -158,4 +159,6 @@ pBtn.addEventListener("click", ()=>{
 
   clickSound.currentTime = 0;
   clickSound.play();
+
+  Win = false;
 })
